@@ -75,3 +75,51 @@ hr {
   border-top: 1px solid #eee;
   margin: 12px 0;
 }
+
+.event--button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.event--button:hover {
+  background-color: #2980b9;
+}
+.event--button:active {
+  background-color: #1c598a;
+}
+.event--button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+.event--button:disabled:hover {
+  background-color: #bdc3c7;
+}
+.event--button:disabled:active {
+  background-color: #bdc3c7;
+}
+.event--button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+}
+.event--button:focus-visible {
+  outline: none;        
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);      
+}
+.event--button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+.event--button:focus-visible:not(:focus) {
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+}
+
+.event--button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+
+
+
