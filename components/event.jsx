@@ -4,12 +4,16 @@ export default function Event() {
     function handleClick() {
         alert("Event handled!");
     }
+    function handleMouseOver() {
+        alert("Mouse is over the event area!");
+    }
     return (
      <main className="event--container">
         <img 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKJQyKgZyn2aIMQ65pa0AtVcddlZZpGp2tDDMvOoAbAS2Wn0uer3OYUdsnjI69qT9IyI&usqp=CAU"
             alt="Random"
             className="event--photo"
+            onMouseOver={handleMouseOver}
         />
         <h1 className="event--title">Event Title</h1>
         <p className="event--date">Date: 2023-10-01</p>
